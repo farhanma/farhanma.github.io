@@ -16,9 +16,7 @@
 			    	if(file.status === 200 || file.status == 0)
 			     	{
 			       	var text = file.responseText;
-			       	text = text.substring(text.indexOf('>') + 1);
-			       	var quote = text.substring(0,text.indexOf('<br />'));
-			       	document.getElementById("qtext").innerHTML += quote;
+			       	document.getElementById("qtext").innerHTML += text;
 			     	}
 			   	}
 			 	}
@@ -29,7 +27,7 @@
 	<body class="homepage" onload="getHistoryFile()">
 		<div id="page-wrapper">
 				<div id="header-wrapper">
-					<div class="container">
+					<div class="container" id="maincontainer">
 							<header id="header">
 								<div class="inner">
 										<h1><a href="index.html" id="logo">Mohammed A. Al Farhan</a></h1>
@@ -43,10 +41,8 @@
 								</div>
 							</header>
 							<div id="banner">
-								<h2 id="qtext"><strong>TODAY'S QUOTE:</strong>
-								<br />
+								<h2 id="qtext">
 								</h2>
-								<a href="history.html" class="button big icon">Quotes History</a>
 							</div>
 
 					</div>
