@@ -26,4 +26,13 @@ Computational science and engineering, Nonlinear preconditioning, Performance mo
 Scientific simulation, Parallel & Distributed Systems, and many- & multi-core emerging HPC architecture.</p>
 
 <hr />
+
+**Follow me on:**
+
+* <a href="https://github.com/farhanma">Github</a> 
+* <a href="https://twitter.com/modafarhan">Twitter</a>
+* <a href="https://bitbucket.org/farhanma/">Bitbucket</a>
+* <a href="https://www.linkedin.com/in/mohammed-al-farhan-b3a29632">LinkedIn</a>
+
+<hr />
 <p style="color: green;"><a href="../Farhan_resume_June2016.pdf">Curriculum Vitae</a>, <font size="2">updated on: 06-19-2016</font></p>
