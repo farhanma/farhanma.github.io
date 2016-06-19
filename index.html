@@ -1,69 +1,28 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Mohammed A. Al Farhan</title>
-		<meta charset="utf-8" />
-		<link rel="stylesheet" href="stylesheets/index.css" />
-		<script type="text/javascript">
-			function getHistoryFile()
-			{
-				var file = new XMLHttpRequest();
-				file.open("GET", 'history.log', false);
-				file.onreadystatechange = function ()
-			 	{
-			  	if(file.readyState == 4)
-			   	{
-			    	if(file.status === 200 || file.status == 0)
-			     	{
-			       	var text = file.responseText;
-			       	text = text.substring(text.indexOf('>') + 1);
-			       	var quote = text.substring(0,text.indexOf('<br />'));
-			       	document.getElementById("qtext").innerHTML += quote;
-			     	}
-			   	}
-			 	}
-			 	file.send(null);
-			}
-		</script>
-	</head>
-	<body class="homepage" onload="getHistoryFile()">
-		<div id="page-wrapper">
-				<div id="header-wrapper">
-					<div class="container">
-							<header id="header">
-								<div class="inner">
-										<h1><a href="index.html" id="logo">Mohammed A. Al Farhan</a></h1>
-										<nav id="nav">
-											<ul>
-												<li class="current_page_item"><a href="index.html">Home</a></li>
-												<li><a href="blog.html">Blog</a></li>												
-												<li><a href="resume.pdf">Resume</a></li>
-											</ul>
-										</nav>
-								</div>
-							</header>
-							<div id="banner">
-								<h2 id="qtext"><strong>TODAY'S QUOTE:</strong>
-								<br />
-								</h2>
-								<a href="history.html" class="button big icon">Quotes History</a>
-							</div>
+---
+layout: default
+---
+{% assign posts_count = (paginator.posts | size) %}
 
-					</div>
-				
-					<footer id="footer" class="container">
-						<div class="row">
-							<div class="12u">
-								<div id="copyright">
-									<ul class="menu">
-										<li>&copy; Mohammed A. Al Farhan. All rights reserved</li>
-										<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</footer>
-			</div>
-		</div>
-	</body>
-</html>
+<div class="home">
+  {% if posts_count > 0 %}
+    <div class="posts">
+      {% for post in paginator.posts %}
+        <div class="post py3">
+          <p class="post-meta">{{ post.date | date: site.date_format }}</p>
+          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
+          <p class="post-summary">
+            {% if post.summary %}
+              {{ post.summary }}
+            {% else %}
+              {{ post.excerpt }}
+            {% endif %}
+          </p>
+        </div>
+      {% endfor %}
+    </div>
+
+    {% include pagination.html %}
+  {% else %}
+    <h1 class='center'>{{ site.text.index.coming_soon }}</h3>
+  {% endif %}
+</div>
