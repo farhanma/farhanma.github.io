@@ -1,0 +1,285 @@
+\documentclass[9pt,a4paper]{extarticle}
+\usepackage[
+  top=3cm, bottom=3cm, left=5.5cm, right=2.5cm, marginpar=3cm]{geometry}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=0pt}
+\usepackage{contour}
+\contourlength{.009em}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,
+    urlcolor=blue,
+}
+\newcommand{\NAME}{Mohammed Al Farhan}
+\newcommand{\SITE}{https://farhanma.github.io}
+\newcommand{\EMAIL}{farhan@icl.utk.edu}
+
+\begin{document}
+
+{{\Huge \contour{black}{\textbf{\NAME}}}}\\
+
+\href{\SITE}{\SITE} \hfill
+\href{mailto:\EMAIL}{\EMAIL}
+\reversemarginpar
+
+\bigskip
+
+\marginpar{\vspace{0.3em}\textsc{Education}}
+{
+\textbf{King Abdullah University of Science and Technology} \hfill 2014-2019
+
+PhD, Computer Science
+
+Topic: \href{https://repository.kaust.edu.sa/handle/10754/644902}
+{Unstructured Computations on Emerging Architectures}
+
+Advisor: David E. Keyes\\
+
+\textbf{King Abdullah University of Science and Technology} \hfill 2012-2013
+
+MSc, Computer Science\\
+
+\textbf{King Faisal University} \hfill 2007-2012
+
+BSc, Computer Science
+}
+\bigskip
+
+\marginpar{\vspace{0.4em}{\parbox[t][0pt][t]{1in}{\textsc{Research}\\\textsc{Experience}}}}
+{
+\textbf{Postdoctoral Researcher, University of Tennessee, Knoxville} \hfill 2019-2020
+\begin{itemize}
+  \item Research on developing distributed multi-GPU software systems for
+  computing numerical linear algebra problems at scale (with Jack Dongarra)\\
+\end{itemize}
+
+\textbf{PhD Student, KAUST} \hfill 2012-2019
+\begin{itemize}
+  \item Developed performance-centric algorithms for high performance computing,
+  in the context of unstructured grid PDEs and the Fast Multipole Method
+  (with David E. Keyes)\\
+\end{itemize}
+
+\textbf{Directed Research, KAUST} \hfill Spring 2013
+\begin{itemize}
+  \item Developed novel combinatorial algorithms based on dynamic programming
+  for multi-pruning of decision trees (with Mikhail Moshkov)
+\end{itemize}
+}
+\bigskip
+
+\marginpar{\vspace{0.3em}{\parbox[t][0pt][t]{1in}{\textsc{Industrial}\\\textsc{Experience}}}}
+{
+\textbf{Co-founder, RoboCrop Systems} \hfill 2017-2019
+\begin{itemize}
+  \item RoboCrop Systems is a startup initiative offering automated farming
+  solutions by using robotics and advanced sensing\\
+\end{itemize}
+
+\textbf{Software Engineer, Saudi Electricity Company} \hfill 2012
+\begin{itemize}
+  \item Developed a smart system to detect anomalies in the reading meters\\
+\end{itemize}
+
+\textbf{Software Engineer Intern, Saudi Aramco} \hfill Summer 2011
+\begin{itemize}
+  \item Developed a distributed key-value store system to track IT change requests\\
+\end{itemize}
+
+\textbf{Software Engineer Intern, Saudi Aramco} \hfill Summer 2010
+\begin{itemize}
+  \item Developed a database management system to log IT reported incidents\\
+\end{itemize}
+}
+\bigskip
+
+\marginpar{\vspace{0.5em}{\textsc{Publications}}}
+{
+\textbf{Journal Articles}
+\begin{itemize}
+\item
+\textbf{M. Al Farhan}, A. Abdelfattah, S. Tomov, M. Gates, D. Sukkari, A. Haidar,
+R. Rosenberg, and J. Dongarra.
+\href{}
+{MAGMA Templates for Scalable Linear Algebra on Emerging
+Architectures}, \textit{IJHPCA 2020}
+\item
+M. Abduljabbar, \textbf{M. Al Farhan}, N. Al-Harthi, R. Chen, R. Yokota, H. Bagci,
+and D. Keyes. \href{https://epubs.siam.org/doi/10.1137/18M1173599}
+{{Extreme Scale FMM-Accelerated Boundary Integral Equation
+Solver for Wave Scattering}}, \textit{SISC 2019}
+
+\url{https://ecrc.github.io/bemfmm/}
+\item
+\textbf{M. Al Farhan} and D. Keyes.
+\href{https://ieeexplore.ieee.org/document/8337750}
+{{Optimizations of Unstructured Aerodynamics Computations
+for Many-core Architectures}}, \textit{IEEE TPDS 2018}
+
+\url{https://ecrc.github.io/kfun3d/}
+\item
+\textbf{M. Al Farhan},
+D. Kaushik, and D. Keyes.
+\href{https://www.sciencedirect.com/science/article/pii/S0167819116300564}
+{{Unstructured Computational Aerodynamics on Many
+Integrated Core Architecture}}, \textit{Parallel Computing 2016}\\
+\end{itemize}
+
+\textbf{Conference Papers}
+\begin{itemize}
+\item
+M. Abduljabbar,
+\textbf{M. Al Farhan},
+R. Yokota, and D. Keyes.
+\href{https://link.springer.com/chapter/10.1007/978-3-319-64203-1_40}
+{{Performance Evaluation of Computation and Communication
+Kernels of the Fast Multipole Method on Intel Manycore Architecture}},
+\textit{Euro-Par 2017}
+\item
+H. AbouEisha,
+\textbf{M. Al Farhan},
+I. Chikalov, and M. Moshkov.
+\href{https://ieeexplore.ieee.org/document/6740370}
+{{An Algorithm for Reduct Cardinality Minimization}},
+\textit{IEEE GrC 2013}
+
+\url{https://farhanma.github.io/MinReduct/}\\
+\end{itemize}
+
+\textbf{Technical Reports}
+\begin{itemize}
+\item
+M. Gates, \textbf{M. Al Farhan}, A. Charara, J. Kurzak, D. Sukkari, A. YarKhan, and J. Dongarra.
+\href{http://www.icl.utk.edu/publications/swan-013}
+{{SLATE Working Note 13: Implementing Singular Value and Symmetric/Hermitian Eigenvalue Solvers}},
+\textit{Innovative Computing Laboratory Technical Report ICL-UT-19-07}, April 2020
+\item
+M. Gates, A. Charara, A. YarKhan, D. Sukkari,
+\textbf{M. Al Farhan}, and J. Dongarra.
+\href{http://www.icl.utk.edu/publications/swan-014}
+{{SLATE Working Note 14: Performance Tuning SLATE}},
+\textit{Innovative Computing Laboratory Technical Report ICL-UT-20-01}, January 2020
+\item
+A. Charara, M. Gates, J. Kurzak, A. YarKhan,
+\textbf{M. Al Farhan}, D. Sukkari, and J. Dongarra.
+\href{http://www.icl.utk.edu/publications/swan-011}
+{{SLATE Working Note 11: SLATE Developers' Guide}},
+\textit{Innovative Computing Laboratory Technical Report ICL-UT-19-02}, April 2020
+\end{itemize}
+}
+
+\bigskip
+
+\marginpar{\vspace{0.55em}{\textsc{Programming}}}
+{
+\begin{itemize}
+\item
+{\bf Languages:} C/C++, Python, Java, Unix Shell, MATLAB, \LaTeX
+\item
+{\bf Models:} MPI, OpenMP, CUDA, pThreads, TBB, Intrinsics
+\item
+{\bf Tools:} Make, CMake, Autotools, perf, Valgrind, gdb, git
+\end{itemize}
+}
+
+\bigskip
+
+\marginpar{\vspace{0.5em}{{\parbox[t][0pt][t]{1in}{{\sc Oral/Poster}\\{\sc Presentations}}}}}
+{
+\begin{itemize}
+  \item
+  Unstructured Computations on Emerging Architectures
+  \begin{itemize}
+  \item
+  SIAM CSE 2019, Spokane, Washington
+  \end{itemize}
+  \item
+  BEMFMM: An Extreme Scale FMM-Accelerated BIE Solver for Wave Scattering
+  \begin{itemize}
+  \item
+  SIAM CSE 2019, Spokane, Washington
+  \item
+  Intel IXPUG 2018, KAUST
+  \item
+  SIAM PP 2018, Tokyo, Japan
+  \end{itemize}
+  \item
+  Optimizations of Unstructured Aerodynamics Computations for Intel KNL Hardware
+  \begin{itemize}
+  \item
+  Intel IXPUG 2018, KAUST
+  \item
+  SIAM PP 2018, Tokyo, Japan
+  \item
+  Intel HPC Developer Conference 2017, Denver, Colorado
+  \item
+  PCCFD Workshop 2017, KAUST
+  \item
+  HPC Saudi Conference 2017, KAUST [best poster award]
+  \item
+  SIAM CSE 2017, Atlanta, Georgia
+  \item
+  SHAXC-3 Workshop 2017, KAUST
+  \end{itemize}
+  \item
+  Performance Evaluation of Fast Multipole Method on Intel Manycore Architecture
+  \begin{itemize}
+  \item
+  Euro-Par 2017, Santiago de Compostela, Spain
+  \item
+  ISC 2017, Frankfurt, Germany
+  \end{itemize}
+  \item
+  Implicit Unstructured Computational Aerodynamics on MIC Architecture
+  \begin{itemize}
+  \item
+  ParCFD 2014, Trondheim, Norway
+  \item
+  SHAXC-2 Workshop 2014, KAUST
+  \end{itemize}
+\end{itemize}
+}
+
+\bigskip
+
+\marginpar{\vspace{0.3em}{\textsc{Teaching}}}
+{
+\textbf{Teaching Assistant (TA), KAUST} \hfill 2014-2018
+\begin{itemize}
+  \item AMCS 312 High Performance Computing (instructor: David E. Keyes)
+  \begin{itemize}
+  \item
+  KAUST CEMSE: Fall 2014, Fall 2015, Fall 2016, Fall 2017, Fall 2018
+  \item
+  UIUC Blue Waters Online Courses: Fall 2016
+  \item
+  Saudi Aramco EXPEC ARC: Fall 2018
+  \end{itemize}
+\end{itemize}
+}
+
+\bigskip
+
+\marginpar{\vspace{0.3em}{\textsc{Services}}}
+{
+\begin{itemize}
+\item
+\textbf{Reviewer:} ACM/IEEE SC 2015, ACM PPoPP 2016, Euro-Par 2016, IEEE Cluster 2016,
+PLOS One 2018, IJHPCA 2018, IEEE IPDSPS 2019, ACM TOPC 2019, Parallel Computing 2019,
+ACM PASC 2020, and Parallel Computing 2020
+\item
+\textbf{Member:} KAUST IEEE Student Chapter (2012-2013),
+KAUST Graduate Council (2012-2014), KAUST ACM/SIAM Student Chapter (2012-2019),
+and KAUST Code Clinic (2014-2019)
+\item
+\textbf{Lecturer:} Gave several tutorials on: Python Programming (Spring 2014 and 2015),
+Fundamentals of High Performance Computing (Summer 2014 and 2015),
+PETSc: Portable, Extensible Toolkit for Scientific Computation (Summer 2016),
+and Version Control using Git (Fall 2020)
+\end{itemize}
+}
+
+\end{document}
