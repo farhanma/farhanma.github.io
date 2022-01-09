@@ -26,6 +26,19 @@
     -->
   </head>
   <body>
+    <style>
+    body {
+      padding: 25px;
+      background-color: white;
+      color: black;
+      font-size: 25px;
+    }
+
+    .dark-mode {
+      background-color: black;
+      color: white;
+    }
+    </style>
     <header class="site-header" role="banner" style="border-top:none">
       <div class="wrapper">
         <a class="site-title" rel="author" href="/">Mohammed Al Farhan</a>
@@ -44,6 +57,7 @@
              href="https://scholar.google.com/citations?hl=en&user=CX9cRR8AAAAJ&view_op=list_works&sortby=pubdate">
              Google Scholar</a>
           <a class="page-link" href="cv.pdf">CV</a></div>
+          <a class="page-link" onclick="dark_mode()">Dark Mode</a></div>
         </nav>
       </div>
     </header>
@@ -136,5 +150,13 @@
         </div>
       </div>
     </footer>
+
+<script>
+function dark_mode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
   </body>
 </html>
