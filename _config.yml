@@ -1,6 +1,5 @@
 theme: jekyll-theme-minimal
-
-logo: ./profile.jpg
+logo: ./avatar_big.jpeg
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 title: Mohammed Al Farhan
