@@ -1,6 +1,6 @@
-remote_theme: pages-themes/minimal@v0.2.0
+theme: jekyll-theme-minimal
 logo: ./avatar.jpg
-title: Mohammed Al Farhan
+title: Mohammed <br> Al Farhan
 description: Computer Scientist <br> <a href="./mohammed_alfarhan_resume_20220224.pdf">Resume</a> <br><br> <a href='mailto:alfarhanmah@gmail.com'><img width="10%" height="10%" src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-email-interface-kiranshastry-solid-kiranshastry.png"/></a>
 show_downloads: false
 github:
