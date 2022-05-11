@@ -5,6 +5,7 @@
     --visited_link_color: #1756a9;
     --site_title_color: #111;
     --border_header_bottom_color: #e8e8e8;
+    --border_footer_bottom_color: #e8e8e8;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -13,7 +14,8 @@
     --link_color: #00ff80;
     --visited_link_color: #ffff00;
     --site_title_color: #fdfdfd;
-    --border_header_bottom_color: a1a1a1
+    --border_header_bottom_color: #808080;
+    --border_footer_bottom_color: #808080;
   }
 }
 div {
@@ -296,7 +298,7 @@ table {
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid var(--border_footer_bottom_color);
   padding: 30px 0; }
 
 .footer-heading {
