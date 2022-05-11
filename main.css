@@ -226,7 +226,20 @@ table {
   margin-bottom: 0;
   float: left; }
   .site-title, .site-title:visited {
-    color: var(--site_title_color); }
+    color: var(--site_title_color);
+  }
+
+  .site-title {
+    color: var(--site_title_color);
+  }
+
+  .site-title:visited {
+    color: var(--site_title_color);
+  }
+  .site-title:hover {
+    color: var(--site_title_color);
+    text-decoration: none;
+  }
 
 .site-nav {
   float: right;
