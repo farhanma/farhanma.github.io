@@ -16,12 +16,6 @@
           rel="alternate"
           href="http://localhost:4000/feed.xml"
           title="Home | Mohammed Al Farhan"/>
-    <style>
-      div {
-        text-align: justify;
-        text-justify: inter-word;
-      }
-    </style>
   </head>
   <body>
     <header class="site-header" role="banner" style="border-top:none">
@@ -36,15 +30,20 @@
               </svg>
             </span>
           </label>
-        <div class="trigger">
-          <a class="page-link" href="https://github.com/farhanma">Github</a>
-          <a class="page-link"
-             href="https://scholar.google.com/citations?hl=en&user=CX9cRR8AAAAJ&view_op=list_works&sortby=pubdate">
-             Google Scholar</a>
-          <a class="page-link"
-             href="https://www.linkedin.com/in/mohammed-al-farhan-08669122a">
-             LinkedIn</a>
-          <a class="page-link" href="cv.pdf">CV</a></div>
+          <div class="trigger">
+            <a class="page-link" href="https://github.com/farhanma">Github</a>
+            <a class="page-link"
+               href="https://scholar.google.com/citations?hl=en&user=CX9cRR8AAAAJ&view_op=list_works&sortby=pubdate">
+               Google Scholar</a>
+            <a class="page-link"
+               href="https://www.linkedin.com/in/mohammed-al-farhan-08669122a">
+               LinkedIn</a>
+            <a class="page-link" href="cv.pdf">CV</a>
+            <div class="form-check form-switch">
+              <input type="checkbox" class="form-check-input" id="darkSwitch">
+              <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+          </div>
+          <script src="dark-mode-switch.min.js"></script>
         </nav>
       </div>
     </header>
