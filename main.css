@@ -6,7 +6,7 @@
     --site_title_color: #111;
     --border_header_bottom_color: #e8e8e8;
 }
-@media (prefers-color-scheme: no-preference) {
+@media (prefers-color-scheme: dark) {
   :root {
     --background: #111;
     --color: #fdfdfd;
