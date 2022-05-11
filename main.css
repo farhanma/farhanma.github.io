@@ -7,7 +7,8 @@
     --border_header_bottom_color: #e8e8e8;
     --border_footer_bottom_color: #e8e8e8;
 }
-@media (prefers-color-scheme: dark) {
+/** @media (prefers-color-scheme: dark) { todo when the button is ready **/
+@media (prefers-color-scheme: light) {
   :root {
     --background: #111;
     --color: #fdfdfd;
