@@ -1,0 +1,317 @@
+body {
+    padding-left: 0;
+}
+
+.container {
+    margin: 4em 0 0 0;
+}
+
+/* Links */
+
+.right-column a {
+    color: #A55858;
+}
+
+.publications, .publications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.publications ul {
+    margin: 1.75em 0;
+}
+
+.small {
+    font-style: italic;
+    opacity: 0.75;
+    font-size: 0.95em;
+    padding-left: 2em;
+    width: 85%;
+}
+
+.gap {
+    margin-top: 0.5em !important;
+}
+
+/* Left column of homepage */
+
+.author-info {
+    /*font-size: 0.9em;
+    float: right;*/
+    text-align: right;
+    /*width: 165px;*/
+}
+
+/*
+.author-info a {
+    color: #000;
+}
+*/
+
+.author-image {
+    -webkit-border-radius: 95px;
+    -moz-border-radius: 95px;
+    border-radius: 95px;
+    height: 70px;
+    width: 70px;
+}
+
+.author-name {
+    font-size: 2.5rem;
+    margin: 0.2em 0;
+}
+
+.author-info a {
+  background: none; /* Don't underline sidebar links */
+}
+
+.home-nav ul {
+    list-style-type: none;
+    /*font-size: 1.2em;
+    margin-top: 1em;
+    padding: 0;*/
+}
+
+/*
+.home-nav ul li {
+    margin-bottom: 0.5em;
+}
+
+.home-nav a {
+    color: #333;
+    text-decoration: none;
+}
+*/
+
+.resume-update {
+    font-size: 0.8em;
+}
+
+.email {
+     color: #999;
+     padding-top: 0.4em;
+}
+
+.nav a {
+    padding-left: 1em;
+    /*text-decoration: none;*/
+}
+
+/*
+.author-bio {
+    color: #666;
+    font-style: italic;
+    line-height: 1.4em;
+    margin-top: 0.5em;
+}
+
+.author-bio a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid #666;
+}
+*/
+
+.news {
+  margin-bottom: 1.5em;
+}
+
+.news li {
+  font-size: 0.9em;
+  margin-bottom: 0.45em;
+}
+
+.video-holder {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  border: 1px solid #333;
+}
+
+.video-holder iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.right-column {
+    max-width: 40em;
+    padding: 0 3em;
+}
+
+/* Course Page */
+
+.details {
+    font-size: 1.25rem;
+    line-height: 1.35rem;
+    width: 100%;
+}
+
+.schedule {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    width: 100%;
+}
+
+.coursepage {
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+/* Blog */
+
+.title {
+    margin: 0;
+}
+
+.title a, .post-meta a {
+    background: none;
+    color: #111;
+}
+
+.title-large {
+    /*clear: left;
+    font-size: 3em;
+    letter-spacing: -2px;*/
+    margin: 0;
+}
+
+.post-meta {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: 0 0 2.2em 0;
+    overflow: auto;
+    padding: 0;
+}
+
+.post-meta li, .post-meta a {
+    color: #999;
+}
+
+.post-meta li {
+    display: inline;
+    float: left;
+    overflow: auto;
+    padding-left: 0.5em;
+    margin-top: 0;
+}
+
+.post-meta li:first-child {
+    padding-left: 0;
+}
+
+.post-meta i {
+    padding-right: 0.4em;
+}
+
+.post-meta a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+  border-left: 1pt solid #eee;
+  padding-left: 1em;
+}
+
+blockquote p {
+  width: 100%;
+}
+
+pre {
+    white-space: pre;
+}
+
+pre > code {
+    width: 100%;
+}
+
+.content img {
+    display: block;
+    margin: 0 auto;
+}
+
+.content .frame {
+  position: relative;
+  padding-bottom: 65.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling:touch;
+}
+
+.content .frame iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content .caption {
+    font-size: 0.8em;
+    line-height: 1.2em;
+    margin: 0 auto 2em auto;
+    width: 80%;
+}
+
+.content .discuss {
+    font-style: italic;
+    margin-top: 1.5em;
+    margin-bottom: 0;
+}
+
+.footnotes {
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+.tags ul {
+    list-style-type: none;
+}
+
+@media (max-width: 767px) {
+    .container {
+        margin: 3em 0;
+    }
+
+    body {
+        padding-left: 8%;
+    }
+
+    .author-info {
+        float: none;
+        margin: 0 auto 3em auto;
+        text-align: center;
+        width: 80%;
+    }
+
+    .nav a {
+        padding: 0.5em;
+    }
+
+    .home-nav ul {
+        padding: 0;
+    }
+
+    .home-nav li {
+        display: inline-block;
+        padding: 0 0.5em;
+    }
+
+    .resume-update {
+        display: none;
+    }
+
+    .small {
+        padding-left: 0em;
+        width: 100%;
+    }
+
+    .right-column {
+        padding: 0em;
+    }
+}
