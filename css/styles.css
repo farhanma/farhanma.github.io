@@ -54,6 +54,7 @@ body {
     border-radius: 95px;
     height: 128px;
     width: 128px;
+    margin-top: 25px;
 }
 
 .author-name {
