@@ -19,10 +19,13 @@
     --border_footer_bottom_color: #808080;
   }
 }
+
+/**
 div {
   text-align: justify;
   text-justify: inter-word;
 }
+**/
 
 /**
  * Reset some basic elements
