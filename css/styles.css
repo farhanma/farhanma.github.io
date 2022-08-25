@@ -1,5 +1,7 @@
 body {
     padding-left: 0;
+    max-width: 900px;
+    width: 75%;
 }
 
 .container {
